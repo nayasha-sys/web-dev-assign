@@ -3,111 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
+    <title>My Profile</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>User Profile</h1>
-        </header>
-        
-        <main>
-            <section class="profile-info">
-                <h2>Personal Information</h2>
-                <div class="info-display">
-                    <p><strong>Name:</strong> John Doe</p>
-                    <p><strong>Email:</strong> john.doe@email.com</p>
-                    <p><strong>Phone:</strong> (555) 123-4567</p>
-                    <p><strong>Location:</strong> New York, NY</p>
-                </div>
-            </section>
-            
-            <div class="profile-section" id="edit">
-                <section class="profile-form">
-                    <h2>Update Profile</h2>
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Full Name:</label>
-                                <input type="text" id="name" name="name" value="John Doe">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" value="john.doe@email.com">
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Phone:</label>
-                                <input type="tel" id="phone" name="phone" value="(555) 123-4567">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="location">Location:</label>
-                                <input type="text" id="location" name="location" value="New York, NY">
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="bio">Bio:</label>
-                            <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="age">Age:</label>
-                                <select id="age" name="age">
-                                    <option value="">Select age range</option>
-                                    <option value="18-25">18-25</option>
-                                    <option value="26-35">26-35</option>
-                                    <option value="36-45">36-45</option>
-                                    <option value="46-55">46-55</option>
-                                    <option value="55+">55+</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label>Interests:</label>
-                            <div class="checkbox-group">
-                                <div class="checkbox-item">
-                                    <label><input type="checkbox" name="interests" value="reading"> Reading</label>
-                                </div>
-                                <div class="checkbox-item">
-                                    <label><input type="checkbox" name="interests" value="sports"> Sports</label>
-                                </div>
-                                <div class="checkbox-item">
-                                    <label><input type="checkbox" name="interests" value="music"> Music</label>
-                                </div>
-                                <div class="checkbox-item">
-                                    <label><input type="checkbox" name="interests" value="travel"> Travel</label>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label>Newsletter:</label>
-                            <div class="radio-group">
-                                <div class="radio-item">
-                                    <label><input type="radio" name="newsletter" value="yes"> Subscribe</label>
-                                </div>
-                                <div class="radio-item">
-                                    <label><input type="radio" name="newsletter" value="no"> No thanks</label>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="form-buttons">
-                            <button type="submit">Update Profile</button>
-                            <button type="reset">Reset</button>
-                        </div>
-                    </form>
-                </section>
+        <!-- Profile Header -->
+        <div class="profile-card">
+            <div class="profile-image">
+                <img src="C:\Users\Admin\OneDrive\Desktop\school\web dev\web-dev-assign\profile picture.jpeg" alt="Profile Picture">
             </div>
-        </main>
+            <h1>Emma Rose</h1>
+            <p class="title"> IT Student & Aspiring Auditor</p>
+            <p class="bio">I love creating beautiful things and learning new skills every day! ✨</p>
+        </div>
+
+        <!-- Basic Info -->
+        <div class="info-section">
+            <h2>About Me</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Age:</strong> 22
+                </div>
+                <div class="info-item">
+                    <strong>Location:</strong> New York, USA
+                </div>
+                <div class="info-item">
+                    <strong>Hobbies:</strong> Drawing, Reading, Music
+                </div>
+                <div class="info-item">
+                    <strong>Favorite Color:</strong> Pink & Purple 💜
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-section">
+            <h2>Say Hello! 👋</h2>
+            <form class="simple-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message 💌</button>
+            </form>
+        </div>
     </div>
+
+    <script>
+        document.querySelector('.simple-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thanks for your message! 💕');
+        });
+    </script>
 </body>
 </html>
