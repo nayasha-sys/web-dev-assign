@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #ffeef8 0%, #f8e8ff 50%, #e8f4f8 100%);
+    background: linear-gradient(135deg, #bd769f 0%, #f8e8ff 50%, #e8f4f8 100%);
     min-height: 100vh;
     color: #333;
     line-height: 1.6;
@@ -19,7 +19,7 @@ body {
     margin: 0 auto;
 }
 
-/* Profile Card */
+
 .profile-card {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
@@ -65,7 +65,7 @@ body {
     font-style: italic;
 }
 
-/* Info Section */
+
 .info-section {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
@@ -121,7 +121,7 @@ body {
     margin-bottom: 5px;
 }
 
-/* Contact Section */
+
 .contact-section {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
@@ -151,7 +151,7 @@ body {
     border-radius: 2px;
 }
 
-/* Simple Form */
+
 .simple-form {
     display: flex;
     flex-direction: column;
@@ -207,7 +207,7 @@ body {
     transform: translateY(-1px);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     body {
         padding: 15px;
@@ -258,7 +258,7 @@ body {
     }
 }
 
-/* Cute animations */
+
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-5px); }
@@ -268,7 +268,7 @@ body {
     animation: float 6s ease-in-out infinite;
 }
 
-/* Add some sparkle effect */
+
 .profile-card::before {
     content: '✨';
     position: absolute;
